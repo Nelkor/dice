@@ -84,8 +84,4 @@ export default {
     box-sizing: border-box;
     padding: 48px;
   }
-
-  p {
-    line-height: 200%;
-  }
 </style>

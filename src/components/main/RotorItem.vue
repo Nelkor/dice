@@ -56,11 +56,19 @@ export default {
     align-items: center;
     width: 100%;
     height: 100%;
-    transform: scale(.75);
+    transform: scale(.7);
+    opacity: .8;
     transition: inherit;
+
+    &:hover {
+      color: #3874e0;
+      transform: scale(.8);
+      opacity: .9;
+    }
 
     &.active {
       transform: scale(1);
+      opacity: 1;
       color: #3874e0;
     }
   }

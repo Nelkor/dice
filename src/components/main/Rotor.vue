@@ -16,6 +16,8 @@
 <script>
 import RotorItem from '@/components/main/RotorItem'
 
+const reverse = angle => angle > 0 ? angle - 360 : angle + 360
+
 export default {
   name: 'Rotor',
   props: {
@@ -23,15 +25,15 @@ export default {
     current: String,
     origin: String,
   },
-  computed: {
-    startAngle() {
-      if (!this.current) return 0
+  data() {
+    const keys = Object.keys(this.sections)
+    const index = keys.indexOf(this.current)
 
-      const keys = Object.keys(this.sections)
-      const index = keys.indexOf(this.current)
-
-      return index * (360 / keys.length)
-    },
+    return {
+      startAngle: index > -1
+        ? index * (360 / keys.length)
+        : 0,
+    }
   },
   methods: {
     angle(key) {
@@ -43,6 +45,22 @@ export default {
   },
   components: {
     RotorItem,
+  },
+  watch: {
+    current(value) {
+      const keys = Object.keys(this.sections)
+      const index = keys.indexOf(value)
+
+      const startAngle = index > -1
+        ? index * (360 / keys.length)
+        : 0
+
+      const angleDif = this.startAngle % 360 - startAngle
+
+      this.startAngle -= Math.abs(angleDif) > 180
+        ? reverse(angleDif)
+        : angleDif
+    },
   },
 }
 </script>
