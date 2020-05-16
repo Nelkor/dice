@@ -1,0 +1,27 @@
+@import '~normalize.css';
+@import '../fonts/Montserrat/index.css';
+
+html {
+  font-family: Montserrat, sans-serif;
+  color: #383A40;
+}
+
+body {
+  background: #f7f9fb;
+  overflow-y: scroll;
+}
+
+h1 {
+  font-size: 26px;
+  margin-top: 0;
+  margin-bottom: 32px;
+  line-height: 150%;
+}
+
+.main-view {
+  width: 500px;
+
+  h1 {
+    text-align: center;
+  }
+}

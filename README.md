@@ -1,4 +1,4 @@
-# rsv-test
+# Dice
 
 ## Project setup
 ```

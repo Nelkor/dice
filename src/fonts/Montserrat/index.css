@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'Montserrat';
+
+  src: url(Regular.woff2) format('woff2'), url(Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 100;
+
+  src: url(Thin.woff2) format('woff2'), url(Thin.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 200;
+
+  src: url(ExtraLight.woff2) format('woff2'), url(ExtraLight.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 300;
+
+  src: url(Light.woff2) format('woff2'), url(Light.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 500;
+
+  src: url(Medium.woff2) format('woff2'), url(Medium.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 600;
+
+  src: url(SemiBold.woff2) format('woff2'), url(SemiBold.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 700;
+
+  src: url(Bold.woff2) format('woff2'), url(Bold.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 800;
+
+  src: url(ExtraBold.woff2) format('woff2'), url(ExtraBold.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 900;
+
+  src: url(Black.woff2) format('woff2'), url(Black.woff) format('woff');
+}
